@@ -36,6 +36,11 @@ def direction_validation_check(user_input):
     else:
         return False
 
+def longitude_or_latitude_check(user_input):
+    if user_input in longitude:
+        return True
+    elif user_input in latitude:
+        return False
 
 while True:
     print("You can travel: {0}.".format(valid_direction))
