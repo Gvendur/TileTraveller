@@ -52,3 +52,16 @@ while True:
 
     if(position_x_axis == 3 and position_y_axis == 1):
         break
+
+    if(position_y_axis == 1):
+        valid_direction = "(N)orth"
+    elif(position_x_axis == 1 and position_y_axis == 2):
+        valid_direction = "(N)orth or (E)ast or (S)outh"
+    elif(position_x_axis != 1 and (position_x_axis == position_y_axis)):
+        valid_direction = "(S)outh or (W)est"
+    elif(position_x_axis == 3 and position_y_axis == 2):
+        valid_direction = "(N)orth or (S)outh"
+    elif(position_x_axis == 1 and position_y_axis ==3):
+        valid_direction = "(E)ast or (S)outh"
+    elif(position_x_axis == 2 and position_y_axis == 3):
+        valid_direction = "(E)ast or (W)est"
