@@ -30,13 +30,21 @@ latitude = "WE"
 
 valid_direction = "(N)orth"
 
+def direction_validation_check(user_input):
+    if(direction in valid_direction and direction not in "()"):
+        return True
+    else:
+        return False
+
+
 while True:
     print("You can travel: {0}.".format(valid_direction))
     while True:
         direction = input("Direction: ").upper()
-        if(direction in valid_direction and direction not in "()"):
+        valid = direction_validation_check(direction)
+        if valid:
             break
-        else:
+        elif not valid:
             print("Not a valid direction!")
         
     if(direction in longitude):
