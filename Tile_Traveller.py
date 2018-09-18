@@ -65,3 +65,5 @@ while True:
         valid_direction = "(E)ast or (S)outh"
     elif(position_x_axis == 2 and position_y_axis == 3):
         valid_direction = "(E)ast or (W)est"
+
+print("Victory!")
