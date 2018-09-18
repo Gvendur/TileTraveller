@@ -49,3 +49,6 @@ while True:
             position_x_axis += 1
         else:
             position_x_axis -= 1
+
+    if(position_x_axis == 3 and position_y_axis == 1):
+        break
