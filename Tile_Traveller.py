@@ -29,3 +29,6 @@ longitude = "NS"
 latitude = "WE"
 
 valid_direction = "(N)orth"
+
+while True:
+    print("You can travel: {0}.".format(valid_direction))
