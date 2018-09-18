@@ -38,3 +38,14 @@ while True:
             break
         else:
             print("Not a valid direction!")
+        
+    if(direction in longitude):
+        if(direction == "N"):
+            position_y_axis += 1
+        else:
+            position_y_axis -= 1
+    elif(direction in latitude):
+        if(direction == "E"):
+            position_x_axis += 1
+        else:
+            position_x_axis -= 1
