@@ -21,14 +21,3 @@
 #         If not the program will go to step 7.
 # Step 7: The program will determine the valid directions from the position on the grid and go to step 1.
 # Step 8: The program will print out "Victory !" and end.
-
-position_x_axis = 1
-position_y_axis = 1
-
-longitude = "NS"
-latitude = "WE"
-
-valid_direction = "(N)orth"
-
-while True:
-    print("You can travel: {0}.".format(valid_direction))
