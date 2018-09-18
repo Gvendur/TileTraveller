@@ -32,3 +32,9 @@ valid_direction = "(N)orth"
 
 while True:
     print("You can travel: {0}.".format(valid_direction))
+    while True:
+        direction = input("Direction: ").upper()
+        if(direction in valid_direction and direction not in "()"):
+            break
+        else:
+            print("Not a valid direction!")
