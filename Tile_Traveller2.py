@@ -53,12 +53,12 @@ while True:
         elif not valid:
             print("Not a valid direction!")
         
-    if(direction in longitude):
+    if longitude_check(direction):
         if(direction == "N"):
             position_y_axis += 1
         else:
             position_y_axis -= 1
-    elif(direction in latitude):
+    elif not longitude_check(direction):
         if(direction == "E"):
             position_x_axis += 1
         else:
