@@ -1,14 +1,17 @@
 # 1. Which implementation was easier and why?
-#       Implementation number 2. With function you are able to divide the problem into 
-#       smaller steps and have better structure. Instead of just lines of code.
+#       Implementation number 2. With functions you are able to divide the problem into 
+#       smaller steps and have a better structure instead of just one long block of code.
 # 2. Which implementation is more readable and why?
-#    Implementation number 2. When using function you can divide the code into small groups
-#    and the the name of the function is also very descriptive for what they do.
-#    That is why they are more readable then one long text of code.
-# 3. Which problems in the first implementations were you able to solve with the latter
+#       Implementation number 2. When using functions you can divide the code into small sections
+#       instead of just one block of code. The name of the functions are also very descriptive 
+#       for what they do.
+# 3. Which problems in the first implementations were you able to solve with the later
 #    implementation?
-#    The program still works the same. With implementation 2 it is easier to understand how it works
-#    When looking through the code and also fixing errors got easier with implementation 2.
+#       The program still works the same. The only problem I had with the first implementation
+#       was readability. With implementation number 2 it was easier to read and understand how it works.
+#       When I ran into errors with implemenation number 2 they were much easier to fix then when 
+#       I ran into errors while coding implementation number 1. 
+#
 # Tile Traveller algorithm description: 
 # Before the game begins:
 #      We will think of the game as a coordinate grid with x and y axis.
