@@ -64,6 +64,10 @@ def new_valid_directions(x_axis, y_axis):
     elif(x_axis == 2 and y_axis == 3):
         return "(E)ast or (W)est"
 
+def user_won(x_axis, y_axis):
+    if(position_x_axis == 3 and position_y_axis == 1):
+        return True
+    return False
 
 while True:
     print("You can travel: {0}.".format(valid_direction))
@@ -82,7 +86,7 @@ while True:
 
     valid_direction = new_valid_directions(position_x_axis, position_y_axis)
 
-    if(position_x_axis == 3 and position_y_axis == 1):
+    if user_won:
         break
 
 print("Victory!")
