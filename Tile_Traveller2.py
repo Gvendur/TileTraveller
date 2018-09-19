@@ -87,6 +87,5 @@ while True:
     valid_direction = new_valid_directions(position_x_axis, position_y_axis)
 
     if user_won:
+        print("Victory!")
         break
-
-print("Victory!")
