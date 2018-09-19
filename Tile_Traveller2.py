@@ -42,7 +42,7 @@ def longitude_check(user_input):
     elif user_input in latitude:
         return False
 
-def new_position(longitude, direction, position):
+def new_position(direction, position):
     if direction == "N" or direction == "E":
         position += 1
         return position
