@@ -49,8 +49,6 @@ def new_position(direction, position):
     if direction == "S" or direction == "W":
         position -= 1
         return position
-    
-
 
 def new_valid_directions(x_axis, y_axis):
     if(y_axis == 1):
@@ -78,15 +76,9 @@ while True:
             print("Not a valid direction!")
         
     if longitude_check(direction):
-        if(direction == "N"):
-            position_y_axis += 1
-        else:
-            position_y_axis -= 1
+        position_y_axis = new_position(direction, position_y_axis)
     elif not longitude_check(direction):
-        if(direction == "E"):
-            position_x_axis += 1
-        else:
-            position_x_axis -= 1
+        position_x_axis = new_position(direction, position_x_axis)
 
     valid_direction = new_valid_directions(position_x_axis, position_y_axis)
 
