@@ -42,6 +42,20 @@ def longitude_check(user_input):
     elif user_input in latitude:
         return False
 
+def new_valid_directions(x_axis, y_axis):
+    if(y_axis == 1):
+        return "(N)orth"
+    elif(x_axis == 1 and y_axis == 2):
+        return "(N)orth or (E)ast or (S)outh"
+    elif(x_axis != 1 and (x_axis == y_axis)):
+        return "(S)outh or (W)est"
+    elif(x_axis == 3 and y_axis == 2):
+        return "(N)orth or (S)outh"
+    elif(x_axis == 1 and y_axis ==3):
+        return "(E)ast or (S)outh"
+    elif(x_axis == 2 and y_axis == 3):
+        return "(E)ast or (W)est"
+
 
 while True:
     print("You can travel: {0}.".format(valid_direction))
@@ -64,20 +78,9 @@ while True:
         else:
             position_x_axis -= 1
 
+    valid_direction = new_valid_directions(position_x_axis, position_y_axis)
+
     if(position_x_axis == 3 and position_y_axis == 1):
         break
-
-    if(position_y_axis == 1):
-        valid_direction = "(N)orth"
-    elif(position_x_axis == 1 and position_y_axis == 2):
-        valid_direction = "(N)orth or (E)ast or (S)outh"
-    elif(position_x_axis != 1 and (position_x_axis == position_y_axis)):
-        valid_direction = "(S)outh or (W)est"
-    elif(position_x_axis == 3 and position_y_axis == 2):
-        valid_direction = "(N)orth or (S)outh"
-    elif(position_x_axis == 1 and position_y_axis ==3):
-        valid_direction = "(E)ast or (S)outh"
-    elif(position_x_axis == 2 and position_y_axis == 3):
-        valid_direction = "(E)ast or (W)est"
 
 print("Victory!")
