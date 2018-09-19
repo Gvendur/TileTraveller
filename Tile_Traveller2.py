@@ -42,6 +42,16 @@ def longitude_check(user_input):
     elif user_input in latitude:
         return False
 
+def new_position(longitude, direction, position):
+    if direction == "N" or direction == "E":
+        position += 1
+        return position
+    if direction == "S" or direction == "W":
+        position -= 1
+        return position
+    
+
+
 def new_valid_directions(x_axis, y_axis):
     if(y_axis == 1):
         return "(N)orth"
