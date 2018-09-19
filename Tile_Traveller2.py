@@ -65,7 +65,7 @@ def new_valid_directions(x_axis, y_axis):
         return "(E)ast or (W)est"
 
 def user_won(x_axis, y_axis):
-    if(position_x_axis == 3 and position_y_axis == 1):
+    if(x_axis == 3 and y_axis == 1):
         return True
     return False
 
@@ -86,6 +86,6 @@ while True:
 
     valid_direction = new_valid_directions(position_x_axis, position_y_axis)
 
-    if user_won:
+    if user_won(position_x_axis, position_y_axis):
         print("Victory!")
         break
